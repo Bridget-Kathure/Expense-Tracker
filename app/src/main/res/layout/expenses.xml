@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvExpenses"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/income" />
+
+    <TextView
+        android:id="@+id/tvMoneyIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="MONEY IN"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ivIncome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAmountIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="KES 42400"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvMoneyIn"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoneyIn" />
+
+    <ImageView
+        android:id="@+id/ivExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/ivIncome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/expense" />
+
+    <TextView
+        android:id="@+id/tvMoneyOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="MONEY OUT"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ivExpense"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAmountOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Kes 23700"
+        app:layout_constraintStart_toStartOf="@+id/tvMoneyOut"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoneyOut" />
+
+    <ImageView
+        android:id="@+id/ivBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivIncome"
+        app:srcCompat="@drawable/balance" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="BALANCE"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ivBalance"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmountIn" />
+
+    <TextView
+        android:id="@+id/tvBalanceAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="KES 18700"
+        app:layout_constraintStart_toStartOf="@+id/tvBalance"
+        app:layout_constraintTop_toBottomOf="@+id/tvBalance" />
+
+    <ImageView
+        android:id="@+id/ivTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/ivBalance"
+        app:layout_constraintTop_toBottomOf="@+id/ivExpense"
+        app:srcCompat="@drawable/transactions" />
+
+    <TextView
+        android:id="@+id/tvTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="TRANSACTIONS"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ivTransactions"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmountOut" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="8"
+        app:layout_constraintStart_toStartOf="@+id/tvTransactions"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransactions" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvsalary"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBalanceAmount" />
+
+    <ImageView
+        android:id="@+id/ivSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvsalary"
+        app:srcCompat="@drawable/income_trx" />
+
+    <TextView
+        android:id="@+id/tvSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Salary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/ivSalary"
+        app:layout_constraintTop_toBottomOf="@+id/cvsalary" />
+
+    <TextView
+        android:id="@+id/tvSalaryAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="KES 40000"
+        app:layout_constraintStart_toStartOf="@+id/tvSalary"
+        app:layout_constraintTop_toBottomOf="@+id/tvSalary" />
+
+    <TextView
+        android:id="@+id/tvSalaryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="42dp"
+        android:text="1 July 2024"
+        app:layout_constraintStart_toEndOf="@+id/tvSalaryAmount"
+        app:layout_constraintTop_toBottomOf="@+id/cvsalary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
