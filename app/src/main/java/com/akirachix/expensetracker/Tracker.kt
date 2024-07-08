@@ -1,7 +1,9 @@
 package com.akirachix.expensetracker
 
-class Tracker (
-  var salaryName: String,
-  var salaryAmount: Int,
-  var paid: String
+import android.icu.text.CaseMap.Title
+
+data class Tracker (
+  var title:String,
+  var amount: String,
+  var date: String
 )

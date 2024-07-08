@@ -23,9 +23,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun displayExpenses(){
-        val expense1 = Tracker("salary", 40000,"1 july 2024")
+        val expense1 = Tracker("salary", "KES 40000","1 july 2024")
+        val expense2 = Tracker("Rent", "KES 20000", "2 June 2020")
+        val expense3 = Tracker("dividends", "KES 39000", "1 May 2024")
 
-        val expenseList = listOf(expense1,)
+        val expenseList = listOf(expense1, expense2, expense3)
         val expenseAdapter = TrackerAdapter(expenseList)
         binding.rvTracker.adapter = expenseAdapter
     }
